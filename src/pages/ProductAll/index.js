@@ -17,7 +17,7 @@ function ProductAll() {
   const [tempSliderValue, setTempSliderValue] = useState([1, 100000]);
 
   const [selectedCategories, setSelectedCategories] = useState([]);
-  const [sliderValue, setSliderValue] = useState([1, 1000000]);
+  const [sliderValue, setSliderValue] = useState([1, 10000000]);
 
   useEffect(() => {
     const fetchCategories = async () => {
