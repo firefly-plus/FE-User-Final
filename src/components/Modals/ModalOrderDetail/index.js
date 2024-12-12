@@ -157,17 +157,18 @@ function ModalOrderDetail({ id }) {
             </Button>
           )}
 
-          {invoiceDetails.orderStatus === "Đã giao" && daysDifference <= 7 && (
-            <Button
-              style={{
-                color: "white",
-                borderColor: "blue",
-                backgroundColor: "blue",
-              }}
-            >
-              Trả hàng
-            </Button>
-          )}
+          {invoiceDetails.orderStatus === "Được giao" &&
+            daysDifference <= 7 && (
+              <Button
+                style={{
+                  color: "white",
+                  borderColor: "blue",
+                  backgroundColor: "blue",
+                }}
+              >
+                Đổi hàng
+              </Button>
+            )}
         </div>
       </div>
     </div>

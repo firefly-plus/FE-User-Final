@@ -43,6 +43,35 @@ function Home() {
     navigate("/product");
   };
 
+  const handleNecklaceClick = () => {
+    navigate("/necklacepage");
+    window.scrollTo(0, 0);
+  };
+  const handleRingClick = () => {
+    navigate("/ringpage");
+    window.scrollTo(0, 0);
+  };
+  const handleBracelectClick = () => {
+    navigate("/braceletpage");
+    window.scrollTo(0, 0);
+  };
+  const handleEarringClick = () => {
+    navigate("/Earringpage");
+    window.scrollTo(0, 0);
+  };
+  const handleLoveRingClick = () => {
+    navigate("/loveringpage");
+    window.scrollTo(0, 0);
+  };
+  const handleLoveNecklaceClick = () => {
+    navigate("/lovenecklacepage");
+    window.scrollTo(0, 0);
+  };
+  const handleLoveBracelectClick = () => {
+    navigate("/lovebraceletpage");
+    window.scrollTo(0, 0);
+  };
+
   return (
     <div className={cx("wrapper", "container")}>
       <div className={cx("banner-section")}>
@@ -88,7 +117,7 @@ function Home() {
           />
           <div className={cx("card__category-footer")}>
             <h3>Dây chuyền</h3>
-            <button>Xem ngay</button>
+            <button onClick={handleNecklaceClick}>Xem ngay</button>
           </div>
         </div>
         <div className={cx("card__category")}>
@@ -98,7 +127,7 @@ function Home() {
           />
           <div className={cx("card__category-footer")}>
             <h3>Nhẫn</h3>
-            <button>Xem ngay</button>
+            <button onClick={handleRingClick}>Xem ngay</button>
           </div>
         </div>
         <div className={cx("card__category")}>
@@ -108,7 +137,7 @@ function Home() {
           />
           <div className={cx("card__category-footer")}>
             <h3>Vòng tay</h3>
-            <button>Xem ngay</button>
+            <button onClick={handleBracelectClick}>Xem ngay</button>
           </div>
         </div>
         <div className={cx("card__category")}>
@@ -118,7 +147,7 @@ function Home() {
           />
           <div className={cx("card__category-footer")}>
             <h3>Hoa tai</h3>
-            <button>Xem ngay</button>
+            <button onClick={handleEarringClick}>Xem ngay</button>
           </div>
         </div>
       </div>
@@ -141,7 +170,7 @@ function Home() {
               <h4>Vòng tay chủ đề tình yêu</h4>
             </div>
             <div className={cx("love__theme-button")}>
-              <button>Xem thêm</button>
+              <button onClick={handleLoveBracelectClick}>Xem thêm</button>
             </div>
           </div>
         </div>
@@ -157,7 +186,7 @@ function Home() {
                 <h4>Dây chuyền chủ đề tình yêu</h4>
               </div>
               <div className={cx("love__theme-button")}>
-                <button>Xem thêm</button>
+                <button onClick={handleLoveNecklaceClick}>Xem thêm</button>
               </div>
             </div>
           </div>
@@ -172,7 +201,7 @@ function Home() {
                 <h4>Nhẫn chủ đề tình yêu</h4>
               </div>
               <div className={cx("love__theme-button")}>
-                <button>Xem thêm</button>
+                <button onClick={handleLoveRingClick}>Xem thêm</button>
               </div>
             </div>
           </div>
@@ -181,7 +210,7 @@ function Home() {
 
       <hr></hr>
       {/* giới thiệu pandora */}
-      <div className={cx("row", 'mt-4')}>
+      <div className={cx("row", "mt-4")}>
         <div className={cx("box__about-pandora")}>
           <div className={cx("col-md-8", "about__pandora-content")}>
             <h1>Khám giá PANDORA</h1>
