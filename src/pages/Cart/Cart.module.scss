@@ -1,0 +1,180 @@
+.wrapper {
+  margin: 200px 0 50px 0;
+  min-height: 100vh;
+
+  .card-order {
+    margin: 10px;
+    border: 1px solid #999292;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+
+    .order-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    .price-section {
+      margin-bottom: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+
+      .price-row {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+
+      .total-label {
+        font-size: 16px;
+        font-weight: bold;
+      }
+
+      .original-price {
+        font-size: 14px;
+        color: #999;
+      }
+
+      .discounted-price {
+        font-size: 18px;
+        color: #b30000;
+        font-weight: bold;
+        align-self: flex-end;
+      }
+
+      .discount-amount {
+        font-size: 14px;
+        color: #000000;
+      }
+    }
+
+    .discount-code {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #f2f2f2;
+      padding: 8px 10px;
+      border-radius: 5px;
+      margin-bottom: 15px;
+      cursor: pointer;
+
+      .discount-icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 8px;
+      }
+      .discount-label {
+        font-size: 14px;
+        margin-right: auto;
+      }
+
+      .select-discount {
+        background: none;
+        border: none;
+        color: #b30000;
+        font-size: 14px;
+        cursor: pointer;
+      }
+    }
+
+    .note-section {
+      margin-bottom: 5px;
+
+      .note-label {
+        font-size: 14px;
+        margin-bottom: 5px;
+        display: block;
+      }
+
+      .note-input {
+        width: 100%;
+        height: 50px;
+        border: 1px solid #dcdcdc;
+        border-radius: 5px;
+        padding: 8px;
+        font-size: 14px;
+        resize: none;
+      }
+    }
+
+    .checkout-button {
+      width: 100%;
+      padding: 10px;
+      border-radius: 999px;
+      background-color: #9a1677;
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-align: center;
+
+      &:hover {
+        background-color: #910099;
+      }
+    }
+  }
+}
+
+.empty-cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h5 {
+    font-size: 2rem;
+  }
+
+  img {
+    width: 300px;
+    height: 300px;
+  }
+
+  button {
+    padding: 5px 20px;
+    font-size: 1.6rem;
+    color: #fff;
+    background-color: var(--primaryBold);
+    transition: all 0.1s linear;
+
+    &:hover {
+      background-color: #fb5f8b;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    }
+  }
+}
+
+.payment_method-label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  display: block;
+}
+.address {
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+
+  .address_info-update {
+    font-size: 10px;
+    color: rgb(10, 72, 144);
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+}
+.info_updated{
+  p{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+  }
+}
